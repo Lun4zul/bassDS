@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Para ti ❤️</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <nav>🔥 Siempre estaré para ti</nav>
+
+  <!-- Pantalla inicial -->
+  <div id="intro">
+    <h1>🎸 Bienvenido</h1>
+    <p>Haz clic en el bajo para entrar</p>
+    <img src="assets/bass_intro.jpg" alt="Haz clic para entrar" id="bass_entry" />
+  </div>
+
+  
+  <div id="main-content" style="display: none;">
+    
+    <img src="assets/lunazul.png" alt="Imagen Luna" id="custom-image" />
+
+    
+    <button id="surprise-btn">🎁 Haz clic para una sorpresa</button>
+
+    
+    <div id="phrases" style="display: none;">
+      <h2>Siempre estaré para ti,<br> no tengas miedo de mí</h2>
+      <p>No estás solo, incluso en el silencio yo estoy contigo.</p>
+      <p>Los días oscuros también terminan, aguanta un poco más.</p>
+      <p>El alma del bajo eres tú, no dejes de sonar.</p>
+      <p>Se que necesitas tiempo, te espero...</p>
+    </div>
+
+    <div id="surprise" style="display: none;">
+      <p>🎶 No olvides que la música sana, y tu alma brilla, algo que encuentras en RB, quedate en el grupo, por favor! 🎶</p>
+
+      <div id="video-container" style="display: none; justify-content: center; align-items: center;">
+        <video
+          id="custom-video"
+          width="560"
+          height="315"
+          playsinline
+          muted
+          preload="auto"
+          controls
+          style="max-width: 90vw; border: 3px solid #ff4444; box-shadow: 0 0 10px #ff0000; border-radius: 8px;"
+        >
+          <source src="assets/videoXD.mp4" type="video/mp4" />
+          
+        </video>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    Hecho con 🎸 y ❤️ — De tu fan número uno :P AndreaH
+  </footer>
+
+  <audio id="bass-sound" src="assets/bass-hit.mp3" preload="auto" loop></audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
