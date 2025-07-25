@@ -15,15 +15,16 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   bassEntry.addEventListener("click", function () {
-    if (isMobile()) {
-      bassSound.currentTime = 0;
-      bassSound.play();
-    }
-    intro.style.display = "none";
-    mainContent.style.display = "block";
-    customImage.style.display = "block";
-    surpriseBtn.style.display = "inline-block";
+  bassSound.currentTime = 0;
+  bassSound.play().catch((error) => {
+    console.warn("Error al intentar reproducir el sonido:", error);
   });
+
+  intro.style.display = "none";
+  mainContent.style.display = "block";
+  customImage.style.display = "block";
+  surpriseBtn.style.display = "inline-block";
+});
 
   surpriseBtn.addEventListener("click", function () {
     bassSound.pause();
